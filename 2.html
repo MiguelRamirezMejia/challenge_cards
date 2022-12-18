@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Navbar Responsive</title>
+  <link rel="stylesheet" href="css/2.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+ <!-- 
+  La etiqueta nav se utiliza para crear un elemento que representa un bloque de navegación.
+  En este caso, se está utilizando para contener todo el contenido de la navbar.
+-->
+<nav>
+  <!-- 
+    La etiqueta div se utiliza para crear un elemento que puede ser utilizado para contener otros elementos.
+    En este caso, se está utilizando para contener el logo de la navbar.
+    La clase "logo" se utiliza para identificar a este elemento y aplicarle estilos en el archivo CSS.
+  -->
+  <div class="logo">
+    <!-- 
+      La etiqueta h1 se utiliza para crear un elemento que representa el título principal de una página web.
+      En este caso, se está utilizando para contener el título del logo de la navbar.
+    -->
+    <h1>ParceWeb3.0</h1>
+  </div>
+  <!-- 
+    La etiqueta ul se utiliza para crear un elemento que representa una lista no ordenada.
+    En este caso, se está utilizando para contener los elementos del menú de la navbar.
+  -->
+  <ul>
+    <!-- 
+      La etiqueta li se utiliza para crear un elemento que representa un ítem de una lista.
+      En este caso, se está utilizando para contener cada elemento del menú de la navbar.
+    -->
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Acerca de</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+  <!-- 
+    La etiqueta label se utiliza para crear un elemento que representa una etiqueta para un elemento de formulario.
+    En este caso, se está utilizando para contener el botón de la hamburguesa para dispositivos móviles.
+    La clase "menu-button" se utiliza para identificar a este elemento y aplicarle estilos en el archivo CSS.
+  -->
+  <label for="menu-toggle" class="menu-button">
+    <!-- 
+      La etiqueta i se utiliza para crear un elemento que representa un icono de una fuente de iconos, como Font Awesome.
+      En este caso, se está utilizando para contener el icono del botón de la hamburguesa.
+      La clase "fas fa-bars" se utiliza para seleccionar el icono deseado de la fuente de iconos.
+    -->
+    <i class="fas fa-bars"></i>
+  </label>
+    <!-- 
+    La etiqueta input se utiliza para crear un elemento que representa un campo de entrada de datos.
+    En este caso, se está utilizando para crear un checkbox que se usará para mostrar y ocultar el menú desplegable en dispositivos móviles.
+    La propiedad "type" se utiliza para especificar el tipo de campo de entrada. En este caso, se está especificando "checkbox" para crear un checkbox.
+    El atributo "id" se utiliza para asignar un nombre único al elemento. En este caso, se está asignando "menu-toggle" al checkbox.
+    La propiedad "hidden" se utiliza para ocultar el elemento. En este caso, se está utilizando para ocultar el checkbox.
+  -->
+  <input type="checkbox" id="menu-toggle" hidden>
+</nav>
+
+
+  
+  
+  
+</body>
+</html>
+

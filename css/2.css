@@ -1,0 +1,125 @@
+/*
+  En este bloque de código se importa la fuente de letra "Roboto" desde Google Fonts.
+  Esto nos permite utilizar esta fuente en nuestro proyecto.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*
+  En este bloque de código se importan los iconos de Font Awesome.
+  Esto nos permite utilizar estos iconos en nuestro proyecto.
+*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+
+/*
+  En este bloque de código se establecen algunas variables que utilizaremos a lo largo del código CSS.
+  Esto nos permite tener ciertos valores comunes en un solo lugar y poder cambiarlos fácilmente si es necesario.
+*/
+:root {
+  --primary-color: #b300ff; /* Color principal, utilizado en el logo y algunos elementos del menú */
+  --secondary-color: #0f0613; /* Color secundario, utilizado como fondo de la navbar */
+  --font-family: 'Roboto', sans-serif; /* Fuente de letra utilizada en la navbar */
+  --font-weight: 700; /* Peso de la fuente de letra utilizada en la navbar */
+  --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rg
+
+    /* (continuación de la línea anterior) Sombra utilizada en algunos elementos de la navbar */
+    --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --transition-time: 0.3s; /* Tiempo de transición utilizado en algunos efectos de la navbar */
+  }
+  
+  /*
+    En este bloque de código se establece el estilo general de la navbar.
+    Se utiliza la variable --secondary-color como fondo y la variable --font-family como fuente de letra.
+    También se utiliza la variable --font-weight para establecer el peso de la fuente de letra.
+    Además, se añade una sombra utilizando la variable --box-shadow para darle un aspecto más atractivo.
+    Por último, se utiliza la propiedad "position" para colocar la navbar por encima de otros elementos de la página.
+  */
+  nav {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 20px;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    position: relative;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+  }
+  
+  /*
+    En este bloque de código se establece el estilo del elemento que contendrá el logo de la navbar.
+    Se utiliza la propiedad "flex: 1" para que ocupe todo el espacio disponible en la navbar.
+    También se utiliza la propiedad "display: flex" y "align-items: center" para alinear el contenido del elemento de manera vertical.
+  */
+  .logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  /*
+  En este bloque de código se establece el estilo del elemento que contiene el icono del logo.
+  Se utiliza la propiedad "margin-left: 10px" para añadir un espacio entre el icono y el título del logo.
+  También se utiliza la propiedad "color" para establecer el color del icono y la propiedad "font-size" para establecer su tamaño.
+  Además, se utiliza la propiedad "transition" para crear un efecto de transición al hacer hover sobre el icono.
+*/
+.logo i {
+  margin-left: 10px;
+  color: var(--primary-color);
+  font-size: 28px;
+  transition: transform var(--transition-time) ease;
+}
+
+/*
+  En este bloque de código se establece el estilo del elemento que contiene el icono del logo al hacer hover sobre él.
+  Se utiliza la propiedad "transform" para rotar el icono 360 grados.
+*/
+.logo i:hover {
+  transform: rotate(360deg);
+}
+
+/*
+  En este bloque de código se establece el estilo del elemento que contiene el menú de la navbar.
+  Se utiliza la propiedad "display: flex" para mostrar los elementos del menú en línea.
+  También se utilizan las propiedades "list-style: none" y "margin: 0" para eliminar los marcadores y márgenes por defecto de la lista.
+*/
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  En este bloque de código se establece el estilo de cada elemento del menú.
+  Se utiliza la propiedad "margin: 0 10px" para añadir un espacio entre cada elemento del menú.
+*/
+nav li {
+  margin: 0 10px;
+}
+
+/*
+  En este bloque de código se establece el estilo de cada enlace del menú.
+  Se utiliza la propiedad "color" para establecer el color del texto y la propiedad "text-decoration" para eliminar la decoración por defecto de los enlaces.
+  También se utiliza la propiedad "transition" para crear un efecto de transición al hacer hover sobre los enlaces.
+  Además, se utiliza la variable --box-shadow para añadir una sombra a los enlaces y la propiedad "border-radius" para redondear los bordes.
+*/
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+/*
+  En este bloque de código se establece el estilo de cada enlace del menú al hacer hover sobre ellos.
+  Se utiliza la propiedad "color" para cambiar el color del texto al hacer hover.
+*/
+nav a:hover {
+  color: var(--primary-color);
+}
+
+/*
+  En este bloque de código se crea una animación para mostrar el menú desplegable en dispositivos móviles.
+  Se utiliza la propiedad "display: block" para mostrar el botón del menú.
+  También se utiliza la propiedad "cursor: pointer" para cambiar el cursor del ratón al hacer hover sobre el botón.
+  Además, se utilizan las propiedades "color" y "font-size" para establecer el color y el tamaño de la fuente de letra del botón.
+*/
+
